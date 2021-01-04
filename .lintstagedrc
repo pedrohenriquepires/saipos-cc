@@ -1,0 +1,10 @@
+{
+  "{frontend/src/**/*.js,frontend/src/**/*.jsx}": [
+    "prettier --config .prettierrc --write",
+    "git add"
+  ],
+  "{backend/src/**/*.ts,backend/src/**/*.js}": [
+    "prettier --config .prettierrc --write",
+    "git add"
+  ]
+}

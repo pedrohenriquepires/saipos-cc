@@ -1,0 +1,26 @@
+{
+  "extends": ["eslint:recommended", "react-app"],
+  "parser": "babel-eslint",
+  "plugins": ["react", "react-hooks", "eslint-plugin-import", "jsx-a11y", "flowtype"],
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "no-console": ["warn", { "allow": ["warn", "error"] }],
+    "no-debugger": "warn",
+    "strict": ["error", "global"],
+    "no-unused-vars": ["warn", { "vars": "all", "args": "none", "ignoreRestSiblings": true }],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "off"
+  }
+}

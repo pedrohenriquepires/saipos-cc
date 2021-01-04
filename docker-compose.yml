@@ -1,0 +1,25 @@
+version: '3.7'
+services:
+  postgres:
+    image: postgres:12.4
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: sistema
+  api:
+    image: node:13.14.0
+    ports:
+      - 3000:3000
+      - 9222:9222
+    links:
+      - postgres
+    depends_on:
+      - postgres
+    volumes:
+      - ./api:/api/
+    environment:
+      NODE_ENV: development
+    working_dir: /api
+    command: bash -c "npm install && npm start"

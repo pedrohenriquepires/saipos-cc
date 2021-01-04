@@ -1,0 +1,14 @@
+.board {
+  margin-top: 40px;
+
+  &__tasks {
+    list-style: none;
+    padding: 0;
+  }
+
+  &__empty {
+    font-weight: 200;
+    color: #999;
+    font-size: 14px;
+  }
+}

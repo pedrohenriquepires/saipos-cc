@@ -1,0 +1,21 @@
+@import './custom.scss';
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  outline: none;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #f7f7f7;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}

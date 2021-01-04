@@ -1,0 +1,87 @@
+.button {
+  border: none;
+  cursor: pointer;
+  transition: background .1s linear;
+  padding: 10px 20px;
+  border-radius: 6px;
+  height: 40px;
+
+  &--default {
+    border: 1px solid #666;
+    background: none;
+    color: #666;
+      
+    svg {
+      fill: #666;
+    }
+
+    &:hover {
+      background: #666;
+      color: #fff;
+
+      svg {
+        fill: #fff;
+      }
+    }
+  }
+
+  &--icon  {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+
+    svg {
+      width: 100%;
+    }
+  }
+
+  &--success {
+    border: 1px solid #abde5a;
+    background: none;
+    color: #abde5a;
+    
+    svg {
+      fill: #abde5a;
+    }
+
+    &:hover {
+      background: #abde5a;
+      color: #fff;
+
+      svg {
+        fill: #fff;
+      }
+    }
+  }
+
+  &--error {
+    border: 1px solid #de5a5a;
+    background: none;
+    color: #de5a5a;
+    
+    svg {
+      fill: #de5a5a;
+    }
+
+    &:hover {
+      background: #de5a5a;
+      color: #fff;
+
+      svg {
+        fill: #fff;
+      }
+    }
+  }
+
+  &:disabled {
+    border: 1px solid #666;
+    background: none;
+    color: #666;
+    cursor: default;
+    
+    svg {
+      fill: #666;
+    }
+  }
+}

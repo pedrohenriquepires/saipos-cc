@@ -1,0 +1,26 @@
+{
+  "name": "saipos-code-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nf start -r",
+    "install-api": "cd api && npm i",
+    "start-api": "docker-compose up",
+    "install-frontend": "cd frontend && npm i",
+    "start-frontend": "cd frontend && npm start",
+    "postinstall": "npm run install-api && npm run install-frontend",
+    "test": "npm run test-api",
+    "test-api": "cd api && npm test",
+    "build-api": "cd api && npm run build"
+  },
+  "author": "Pedro Henrique Pires",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^26.0.15",
+    "foreman": "^3.0.1",
+    "husky": "^4.3.6",
+    "lint-staged": "^10.2.10",
+    "prettier": "^2.1.1"
+  }
+}

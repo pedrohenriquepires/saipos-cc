@@ -1,0 +1,27 @@
+.home {
+  & > .container {
+    margin-top: 40px;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+      margin: 0 10px;
+    }
+  }
+
+  &__new-task {
+    margin-top: 20px;
+
+    form {
+      display: flex;
+      align-items: flex-end;
+
+      button:last-child {
+        margin: 0 10px 0 5px;
+      }
+    }
+  }
+}

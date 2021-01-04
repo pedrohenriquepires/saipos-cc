@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "src",
+    "jsx": "react",
+    "paths": {
+      "app-components": ["ui/components/index.js"],
+      "app-pages": ["ui/pages/index.js"],
+      "app-constants": ["constants/index.js"],
+      "app-hooks": ["hooks/index.js"],
+      "app-route-manager": ["ui/router/route-manager.js"],
+      "app-router": ["ui/router/index.js"],
+      "app-providers": ["providers/index.js"],
+      "app-helpers": ["helpers/index.js"],
+      "app-styles/*": ["ui/static/styles/*"],
+      "app-images": ["ui/static/images/index.js"]
+    }
+  },
+  "exclude": ["node_modules", "build"]
+}
