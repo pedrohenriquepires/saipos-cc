@@ -14,15 +14,6 @@ export interface ITasksRepository {
 export class TasksRepository implements ITasksRepository {
   constructor(private database: Knex) {}
 
-  // async findByEmail(email: string): Promise<User | undefined> {
-  //   const result = await this.database
-  //     .select('*')
-  //     .from<User>('users')
-  //     .where('email', email)
-  //     .first()
-  //   return result
-  // }
-
   async create(taskData: ITask): Promise<Task> {
     const task = new Task(taskData)
 
